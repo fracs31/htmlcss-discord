@@ -222,7 +222,6 @@ footer hr {
 
 /* Colonne grandi presenti nel footer */
 .footer-big {
-    background-color: #e76f51;
     flex-basis: calc(100% / 3);
 }
 
@@ -237,8 +236,20 @@ footer hr {
 
 /* Colonne piccole presenti nel footer */
 .footer-small {
-    background-color: #02c39a;
     flex-basis: calc(100% / 6);
+}
+
+.footer-small span {
+    color: #5465ff;
+}
+
+.footer-small ul {
+    list-style: none;
+}
+
+.footer-small li {
+    color: white;
+    margin-top: 15px;
 }
 
 /* Righe della sezione finale del footer */
