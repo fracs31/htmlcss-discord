@@ -61,6 +61,7 @@ header {
     text-align: right;
 }
 
+/* Bottone di login */
 .login span {
     background-color: white;
     color: #23272a;
@@ -87,18 +88,24 @@ header {
     align-items: center;
 }
 
-.title, .description, .button {
+/* Suddivisione spazi download */
+.title, 
+.description, 
+.button {
     flex-basis: calc(100% / 3);
 }
 
+/* Descrizione download */
 .description {
     text-align: center;
 }
 
+/* Bottoni */
 .button {
     padding: 10px;
 }
 
+/* Bottone download */
 .download-button {
     background-color: white;
     color: black;
@@ -106,6 +113,7 @@ header {
     border-radius: 20px;
 }
 
+/* Bottono Discord sul browser */
 .browser-button {
     background-color: #23272a;
     padding: 10px;
@@ -132,6 +140,7 @@ main section:nth-child(2n) {
     flex-basis: 60%;
 }
 
+/* Immagine contenuta nel box grande */
 .main-big img {
     width: 100%;
     height: 100%;
@@ -142,41 +151,53 @@ main section:nth-child(2n) {
     flex-basis: 40%;
 }
 
+/* Titolo box piccolo del main */
 .main-small h2 {
     font-size: 36px;
     color: #23272a;
 }
 
+/* Paragrafo box piccolo del main */
 .main-small p {
     color: #23272a;
 }
 
-/* Riga senza colonne */
-.nocol {
+/* Riga del main con l'immagine grande */
+.big-img {
     flex-direction: column;
     align-items: center;
-    flex-basis: calc(100% / 3);
 }
 
+/* Informazioni */
 .info {
     text-align: center;
     padding: 10px;
+    flex-basis: calc(100% / 3);
 }
 
+/* H2 informazioni */
 .info h2 {
     font-size: 36px;
 }
 
+/* Box immagine presente nelle informazioni */
+.img-info {
+    flex-basis: calc(100% / 3);
+}
+
+/* Immagine presente nelle informazioni */
 .img-info img {
     height: 100%;
     width: 100%;
 }
 
+/* Paragrafo informazioni */
 .info p {
     font-size: 20px;
     color: #23272a;
 }
 
+/* Bottone download */
 .info span {
     background-color: #5865f2;
     color: white;
@@ -205,6 +226,7 @@ footer hr {
     height: 400px;
 }
 
+/* Icone footer */
 .section-footer img {
     height: 15px;
     width: 20px;
@@ -215,11 +237,13 @@ footer hr {
     flex-basis: calc(100% / 3);
 }
 
+/* H3 nella parta grande del footer */
 .footer-big h3 {
     font-size: 28px;
     color: #5865f2;
 }
 
+/* Span nella parte grande del footer */
 .footer-big span {
     color: white;
 }
@@ -229,14 +253,17 @@ footer hr {
     flex-basis: calc(100% / 6);
 }
 
+/* Span parte piccola del footer */
 .footer-small span {
     color: #5865f2;
 }
 
+/* Lista footer */
 .footer-small ul {
     list-style: none;
 }
 
+/* Elementi della lista del footer */
 .footer-small li {
     color: white;
     margin-top: 15px;
@@ -253,6 +280,7 @@ footer hr {
     padding: 10px;
 }
 
+/* Span parte finale del footer */
 .footer-end span {
     background-color: #5865f2;
     color: white;
