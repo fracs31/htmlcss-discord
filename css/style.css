@@ -12,7 +12,9 @@ body {
 
 /* Header */
 header {
-    background-color: #8ecae6;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Container */
@@ -36,8 +38,9 @@ header {
     width: 100%;
     height: 50px;
     justify-content: space-between;
-    background-color: orange;
+    align-items: center;
     border: 1px dashed black;
+    color: white;
 }
 
 /* Column */
@@ -53,12 +56,23 @@ header {
 /* Link */
 .link  {
     flex-grow: 2;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Login */
 .login {
     flex-grow: 1;
+    padding: 10px;
+    text-align: right;
+}
+
+.login span {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
 }
 
 /* Download */
@@ -66,15 +80,43 @@ header {
     display: flex;
     justify-content: center;
     padding: 40px 0px;
-    background-color: #003f88;
 }
 
 /* Box con le info del download */
 .download-box {
     width: 700px;
     height: 300px;
-    background-color: #ff69eb;
+    color: white;
     border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title, .description, .button {
+    flex-basis: calc(100% / 3);
+}
+
+.description {
+    text-align: center;
+}
+
+.button {
+    padding: 10px;
+}
+
+.download-button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.browser-button {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 /* Ogni due section del main lo sfondo è grigio */
