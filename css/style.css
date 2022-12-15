@@ -157,9 +157,40 @@ main section:nth-child(2n) {
 
 /* Riga senza colonne */
 .nocol {
-    height: 600px;
-    background-color: green;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(100% / 3);
     border: 2px dashed black;
+}
+
+.info {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.info h2 {
+    font-size: 36px;
+}
+
+.img-info {
+    border: 1px solid black;
+}
+
+.img-info img {
+    height: 100%;
+    width: 100%;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info span {
+    background-color: #9bb1ff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 /* Footer */
