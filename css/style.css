@@ -219,6 +219,7 @@ footer section {
 /* Linea presente nel footer */
 footer hr {
     border: 1px solid #5865f2;
+    background-color: #5865f2;
 }
 
 /* Righe presenti nel footer */
