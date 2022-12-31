@@ -1,290 +1,260 @@
-/* Regole inziali */
+/* Regole generali */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Body */
-body {
-    font-family: Arial, Helvetica, sans-serif;
+ul, ol menu {
+    list-style: none;
 }
 
-/* Header */
-header {
-    background-image: url("../img/jumbo.png");
-    background-size: cover;
-    background-position: center;
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
-/* Container */
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
-/* Container dell'header */
-.header {
-    padding: 10px 0px;
+.container-small {
+    max-width: 775px;
+    margin: 0px auto;
 }
 
-/* Row */
-.row {
-    display: flex;
+/* Header */
+.main-header {
+    background-color: #255EE9;
+    color: white;
+    padding: 20px 0px;
 }
 
 /* Navbar */
 .navbar {
-    width: 100%;
-    height: 50px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
 }
 
-/* Logo */
-.logo {
-    flex-grow: 1;
-}
-
-/* Link */
-.link  {
-    flex-grow: 2;
+/* Lista azioni */
+.actions ul {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-/* Login */
-.login {
-    flex-grow: 1;
-    padding: 10px;
-    text-align: right;
-}
-
-/* Bottone di login */
-.login span {
+/* Bottone bianco */
+.white {
+    color: black;
     background-color: white;
-    color: #23272a;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
+    border-radius: 999px;
+    padding: 10px 15px;
 }
 
-/* Download */
-.download {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0px;
-}
-
-/* Box con le info del download */
-.download-box {
-    width: 700px;
-    height: 300px;
+/* Bottone nero */
+.black {
     color: white;
+    background-color: black;
+    border-radius: 999px;
+    padding: 10px 15px;
+}
+
+/* Bottone viola */
+.violet {
+    color: white;
+    background-color: #7289DA;
+    border-radius: 999px;
+    padding: 10px 15px;
+}
+
+/* Hero */
+.hero {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center bottom;
+    color: white;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 125px;
+}
+
+/* Descrizione hero */
+.hero-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
-/* Suddivisione spazi download */
-.title, 
-.description, 
-.button {
-    flex-basis: calc(100% / 3);
+/* Titolo nell'hero */
+.hero__title {
+    padding-bottom: 40px;
 }
 
-/* Descrizione download */
-.description {
-    text-align: center;
+/* Titolo hero */
+.hero__title h1 {
+    font-size: 48px;
 }
 
-/* Bottoni */
-.button {
-    padding: 10px;
+/* Testo nell'hero */
+.hero__text {
+    padding-bottom: 30px;
 }
 
-/* Bottone download */
-.download-button {
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 20px;
+/* Testo hero */
+.hero__text p {
+    font-size: 18px;
 }
 
-/* Bottono Discord sul browser */
-.browser-button {
-    background-color: #23272a;
-    padding: 10px;
-    border-radius: 20px;
+/* Bottone hero */
+.hero__buttons a:first-child {
+    margin-right: 10px;
 }
 
-/* Ogni due section del main lo sfondo è grigio */
-main section:nth-child(2n) {
-    background-color: #f8f9fa;
+/* Sezione con immagine e testo di fianco */
+.img-text {
+    padding: 130px 0px;
 }
 
-/* Container del main */
-.main {
-    padding: 30px 0px;
+/* Riga */
+.row {
+    display: flex;
 }
 
-/* Righe nelle section del main */
-.section-main {
-    height: 400px;
-}
-
-/* Colonne grandi delle righe nelle section del main */
-.main-big {
+/* Colonna 60% */
+.col-60 {
     flex-basis: 60%;
 }
 
-/* Immagine contenuta nel box grande */
-.main-big img {
+/* Immagine nella colonna */
+.col-60 img {
     width: 100%;
     height: 100%;
 }
 
-/* Colonne piccole delle righe nelle section del main */
-.main-small {
+/* Colonna 40% */
+.col-40 {
     flex-basis: 40%;
 }
 
-/* Titolo box piccolo del main */
-.main-small h2 {
-    font-size: 36px;
-    color: #23272a;
+/* Sottotitolo colonna 40% */
+.col-40 h2 {
+    font-size: 48px;
+    padding-bottom: 30px;
 }
 
-/* Paragrafo box piccolo del main */
-.main-small p {
-    color: #23272a;
+/* Paragrafo colonna 40% */
+.col-40 p {
+    font-size: 18px;
 }
 
-/* Riga del main con l'immagine grande */
-.big-img {
+/* Sfondo per alternare le sezioni img-text */
+.grey {
+    background-color: #F6F6F6;
+}
+
+/* Flex direction per alternare le sezioni img-text */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Flex direction per alternare le sezioni img-text */
+.column {
     flex-direction: column;
-    align-items: center;
-}
-
-/* Informazioni */
-.info {
     text-align: center;
-    padding: 10px;
-    flex-basis: calc(100% / 3);
 }
 
-/* H2 informazioni */
-.info h2 {
-    font-size: 36px;
+/* Sottotitolo colonna */
+.column .col h2 {
+    font-size: 48px;
 }
 
-/* Box immagine presente nelle informazioni */
-.img-info {
-    flex-basis: calc(100% / 3);
+/* Paragrafo colonna */
+.column .col p {
+    font-size: 18px;
 }
 
-/* Immagine presente nelle informazioni */
-.img-info img {
-    height: 100%;
-    width: 100%;
-}
-
-/* Paragrafo informazioni */
-.info p {
-    font-size: 20px;
-    color: #23272a;
-}
-
-/* Bottone download */
-.info span {
-    background-color: #5865f2;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
+/* Sottotitolo start */
+.start h3 {
+    font-size: 24px;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
 
 /* Footer */
-footer {
-    background-color: #23272a;
-    padding: 10px;
+.page-footer {
+    background-color: #23272A;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-/* Section del footer */
-footer section {
-    padding: 10px 0px;
+/* Righe footer */
+.page-footer .row  {
+    justify-content: space-between;
 }
 
-/* Linea presente nel footer */
-footer hr {
-    border: 1px solid #5865f2;
-    background-color: #5865f2;
+/* Info footer */
+.info {
+    padding-bottom: 50px;
 }
 
-/* Righe presenti nel footer */
-.section-footer {
-    height: 400px;
+/* Colonne footer */
+.page-footer .col {
+    flex-basis: calc( 100% / 5 );
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Icone footer */
-.section-footer img {
-    height: 15px;
+/* Liste */
+.info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Sottotitolo footer */
+.page-footer h5 {
+    font-size: 16px;
+    color: #7087D9;
+}
+
+/* Titolo informazioni */
+.info__title h4 {
+    font-size: 24px;
+    color: #7087D9;
+}
+
+/* Immagine della lingua */
+.language img {
     width: 20px;
 }
 
-/* Colonne grandi presenti nel footer */
-.footer-big {
-    flex-basis: calc(100% / 3);
+/* Lista dei social */
+.social__list {
+    display: flex;
+    gap: 20px;
 }
 
-/* H3 nella parta grande del footer */
-.footer-big h3 {
-    font-size: 28px;
-    color: #5865f2;
+/* Linea */
+.page-footer hr {
+    border: 1px solid #7087D9;
 }
 
-/* Span nella parte grande del footer */
-.footer-big span {
-    color: white;
-}
-
-/* Colonne piccole presenti nel footer */
-.footer-small {
-    flex-basis: calc(100% / 6);
-}
-
-/* Span parte piccola del footer */
-.footer-small span {
-    color: #5865f2;
-}
-
-/* Lista footer */
-.footer-small ul {
-    list-style: none;
-}
-
-/* Elementi della lista del footer */
-.footer-small li {
-    color: white;
-    margin-top: 15px;
-}
-
-/* Righe della sezione finale del footer */
-.section-footer-end {
-    justify-content: space-between;
+/* Riga finale */
+.bottom {
+    padding-top: 10px;
     align-items: center;
 }
 
-/* Colonne finali presenti nel footer*/
-.footer-end {
-    padding: 10px;
-}
-
-/* Span parte finale del footer */
-.footer-end span {
-    background-color: #5865f2;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
+/* Registrazione */
+.sign-up {
+    text-align: right;
 }
